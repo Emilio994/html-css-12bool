@@ -1,0 +1,57 @@
+/* COMMON */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.1em;
+}
+.row {
+  text-align: center;
+  line-height: 20vh;
+  background-color: #F07F80;
+}
+
+/*ALL COLUMNS */
+[class*="col-"] {
+  background-color: PINK;
+  border: 1px solid black;
+}
+
+/* LAST ROW COLUMNS' */
+.row:nth-child(5) [class*="col-"] {
+  padding: 0.5%;
+}
+.row:nth-child(5) [class*="col-"] [class*="col-"] {
+  background-color: #F07F80;
+  border: 1px solid white;
+}
+
+/* LAST ROW - FIRS COLUMN - FIRST TWO CHILDREN */
+.row:nth-child(5) [class*="col-"]:first-child .col-2 {
+  position: relative;
+}
+.row:nth-child(5) [class*="col-"]:first-child .col-2 span{
+  line-height: 2.5vh;
+  position: absolute;
+  color: yellow;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* (BONUS) THIRD ROW*/
+.row:nth-child(3) [class*="col-"]:first-child [class*="col-"] {
+  border: none;
+  background-color: lightblue;
+}
+.row:nth-child(3) [class*="col-"]:first-child [class*="col-"]:nth-child(3n+1) {
+  color: red;
+}
+.row:nth-child(3) [class*="col-"]:first-child [class*="col-"]:nth-child(3n+2) {
+  color: blue;
+}
+.row:nth-child(3) [class*="col-"]:first-child [class*="col-"]:nth-child(3n+3) {
+  color: yellow;
+}
