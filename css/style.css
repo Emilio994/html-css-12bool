@@ -1,0 +1,38 @@
+/* COMMON */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.1em;
+}
+.row {
+  text-align: center;
+  line-height: 20vh;
+}
+
+/*ALL COLUMNS */
+[class*="col-"] {
+  background-color: PINK;
+  border: 1px solid black;
+}
+
+/* LAST ROW COLUMNS' */
+.row:nth-child(5) [class*="col-"] {
+  padding: 0.5%;
+}
+.row:nth-child(5) [class*="col-"] [class*="col-"] {
+  background-color: #F07F80;
+  border: 1px solid white;
+}
+.row:nth-child(5) [class*="col-"]:first-child .col-2 {
+  position: relative;
+}
+.row:nth-child(5) [class*="col-"]:first-child .col-2 span{
+  line-height: 2.5vh;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
