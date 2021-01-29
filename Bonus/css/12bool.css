@@ -12,7 +12,7 @@
   width: 70%;
   margin: 0 auto;
   height: 20vh;
-  transition: 0.5s;
+
 }
 
 /* Columns */
@@ -97,12 +97,4 @@
 }
 .col-offset-12 {
   margin-left: calc((100% / 12) * 12)
-}
-
-@media screen and (max-width:1360px) {
-
-  .row {
-    width: 100%;
-    transition: 0.5s;
-  }
 }

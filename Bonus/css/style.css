@@ -11,6 +11,7 @@ body {
   text-align: center;
   line-height: 20vh;
   background-color: #F07F80;
+  transition: 0.5s;
 }
 
 /*ALL COLUMNS */
@@ -54,4 +55,12 @@ body {
 }
 .row:nth-child(3) [class*="col-"]:first-child [class*="col-"]:nth-child(3n+3) {
   color: yellow;
+}
+
+/* BREAKPOINT LOW-RES */
+@media screen and (max-width:1360px) {
+  .row {
+    width: 100%;
+    transition: 0.5s;
+  }
 }
