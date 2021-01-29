@@ -26,6 +26,8 @@ body {
   background-color: #F07F80;
   border: 1px solid white;
 }
+
+/* LAST ROW - FIRS COLUMN - FIRST TWO CHILDREN */
 .row:nth-child(5) [class*="col-"]:first-child .col-2 {
   position: relative;
 }
