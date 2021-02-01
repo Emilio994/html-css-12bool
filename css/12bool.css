@@ -30,8 +30,8 @@
 .col-11 {  width: calc((100% / 12) * 11)}
 .col-12 {  width: calc((100% / 12) * 12)}
 
-.clearifx {
-  display: '';
+.clearfix:after {
+  content: "";
   display: table;
   clear: both;
 }

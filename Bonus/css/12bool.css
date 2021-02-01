@@ -17,6 +17,12 @@ height: 100%;
 float: left;
 }
 
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .col-1 {  width: calc((100% / 12) * 1)}
 .col-2 {  width: calc((100% / 12) * 2)}
 .col-3 {  width: calc((100% / 12) * 3)}
@@ -30,11 +36,6 @@ float: left;
 .col-11 {  width: calc((100% / 12) * 11)}
 .col-12 {  width: calc((100% / 12) * 12)}
 
-.clearifx {
-display: '';
-display: table;
-clear: both;
-}
 
 .col-offset-1 {  margin-left: calc((100% / 12) * 1)}
 .col-offset-2 {  margin-left: calc((100% / 12) * 2)}
