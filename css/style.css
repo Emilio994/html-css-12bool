@@ -9,30 +9,31 @@ body {
 }
 .row {
   text-align: center;
-  line-height: 20vh;
+  width: 70%;
+  margin: 0 auto;
 }
 
-/*ALL COLUMNS */
+/*COLUMNS */
 [class*="col-"] {
   background-color: PINK;
   border: 1px solid black;
+  height: 20vh;
 }
 
-/* LAST ROW COLUMNS' */
 .row:nth-child(5) [class*="col-"] {
   padding: 0.5%;
 }
+
 .row:nth-child(5) [class*="col-"] [class*="col-"] {
   background-color: #F07F80;
   border: 1px solid white;
+  height: 100%;
 }
 
-/* LAST ROW - FIRS COLUMN - FIRST TWO CHILDREN */
-.row:nth-child(5) [class*="col-"] [class*="col-"] {
+.row [class*="col-"] {
   position: relative;
 }
-.row:nth-child(5) [class*="col-"] [class*="col-"] span{
-  line-height: 2vh;
+.row [class*="col-"] span  {
   position: absolute;
   top: 50%;
   left: 50%;
